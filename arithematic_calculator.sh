@@ -24,6 +24,11 @@ while true; do
     echo "You entered "$num1", this is not an integer. Please enter an integer."
     continue
   fi
+  break
+done
+
+while true; do
+
   read -p "Enter the second integer number: " num2
   if ! is_integer "$num2"; then
     echo "You entered "$num2", this is not an integer. Please enter an integer."
